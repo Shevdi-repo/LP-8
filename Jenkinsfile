@@ -3,9 +3,9 @@ pipeline {
 
     stages {
 
-        stage('Install dependencies') {
+        stage('Install Dependencies') {
             steps {
-                sh 'composer install'
+                sh 'docker run --rm -v $PWD:/app -w /app composer install'
             }
         }
 
