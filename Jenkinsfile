@@ -2,11 +2,6 @@ pipeline {
     agent any
 
     stages {
-        stage('Clone repo') {
-            steps {
-                git 'https://github.com/Shevdi-repo/LP-8.git'
-            }
-        }
 
         stage('Install dependencies') {
             steps {
